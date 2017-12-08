@@ -3,6 +3,8 @@ def turn_count(board)
   board.each do |value|
     if (board[value] == "X" || board[value] == "O")
       occupied += 1
+      return occupied
     end
   end
+  return occupied
 end
