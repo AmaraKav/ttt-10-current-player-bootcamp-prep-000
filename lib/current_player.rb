@@ -13,7 +13,7 @@ def current_player(board)
   player = "X"
   if (turn.to_i % 2 == 0)
     player = "X"
-  elsif (turn.to_i % 3 == 0)
+  else
     player = "O"
   end
   return player
