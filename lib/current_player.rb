@@ -9,7 +9,7 @@ def turn_count(board)
 end
 
 def current_player(board)
-  player = ""
+  player = "X"
   board.each do |value|
     if(value == "X")
       player = "O"
