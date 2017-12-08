@@ -11,9 +11,9 @@ end
 def current_player(board)
   turn = turn_count(board)
   player = "X"
-  if (turn.to_i % 2 = 0)
+  if (turn.to_i % 2 == 0)
     player = "X"
-  elsif (turn.to_i % 3 = 0)
+  elsif (turn.to_i % 3 == 0)
     player = "O"
   end
   return player
