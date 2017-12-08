@@ -7,3 +7,15 @@ def turn_count(board)
   end
   return occupied
 end
+
+def current_player(board)
+  player = ""
+  board.each do |value|
+    if(value == "X")
+      player = "O"
+    elsif(value == "O")
+      player = "X"
+    end
+  end
+  return player
+end
