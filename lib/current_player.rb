@@ -3,7 +3,7 @@ def turn_count(board)
   board.each do |value|
     if (value == "X" || value == "O")
       occupied += 1
-      puts occupied
+      return occupied
     end
   end
   return occupied
