@@ -9,13 +9,12 @@ def turn_count(board)
 end
 
 def current_player(board)
+  turn = turn_count(board)
   player = "X"
-  board.each do |value|
-    if(value == "X")
-      player = "O"
-    elsif(value == "O")
-      player = "X"
-    end
+  if (turn.to_i % 2 = 0)
+    player = "X"
+  elsif (turn.to_i % 3 = 0)
+    player = "O"
   end
   return player
 end
